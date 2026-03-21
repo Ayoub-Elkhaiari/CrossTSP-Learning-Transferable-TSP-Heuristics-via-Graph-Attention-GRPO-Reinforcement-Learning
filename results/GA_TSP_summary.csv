@@ -1,0 +1,5 @@
+Dataset,#Cities,Known Optimal,GA Best Distance,GAP (%)
+berlin52,52,7542,9555.26,26.69
+att48,48,10628,41741.59,292.75
+eil51,51,426,534.73,25.52
+st70,70,675,855.01,26.67

@@ -1,0 +1,38 @@
+Dataset    | #Cities | Known Optimal Tour Length | Source / TSPLIB reference
+-----------------------------------------------------------------------
+berlin52   | 52      | 7542                     | TSPLIB (EUC_2D)
+att48      | 48      | 10628                    | TSPLIB (EUC_2D)
+eil51      | 51      | 426                      | TSPLIB (EUC_2D)
+st70       | 70      | 675                      | TSPLIB (EUC_2D)
+
+
+
+
+1 - Trained o Berlin52, Test on Berlin52 tour length = 24184.94
+
+🏁 Tour sequence (1-indexed):
+41 → 11 → 51 → 18 → 28 → 10 → 31 → 33 → 17 → 2 → 3 → 8 → 9 → 19 → 42 → 47 → 52 → 
+26 → 27 → 1 → 13 → 14 → 21 → 23 → 29 → 36 → 40 → 43 → 44 → 45 → 46 → 49 → 50 → 7 → 
+12 → 15 → 32 → 37 → 38 → 39 → 48 → 4 → 5 → 6 → 16 → 20 → 22 → 24 → 25 → 30 → 34 → 35 → 41
+
+2 - Trained o Berlin52, Test on att48 tour length = 170639.52
+
+🏁 Tour sequence (1-indexed):
+30 → 25 → 43 → 46 → 48 → 22 → 31 → 10 → 44 → 1 → 2 → 4 → 6 → 8 → 11 → 12 → 14 → 16 → 32 → 36 → 
+42 → 45 → 3 → 7 → 9 → 13 → 18 → 35 → 20 → 23 → 28 → 34 → 37 → 40 → 41 → 47 → 17 → 27 → 29 → 38 → 
+39 → 5 → 19 → 24 → 26 → 33 → 21 → 15 → 30
+
+3 - Trained o att48, Test on att48 tour length = 165624.96
+
+🏁 Tour sequence (1-indexed):
+32 → 25 → 43 → 46 → 48 → 22 → 31 → 10 → 44 → 1 → 2 → 4 → 6 → 8 → 11 → 12 → 14 → 16 → 36 → 42 → 45 →
+ 3 → 7 → 9 → 13 → 18 → 35 → 20 → 23 → 28 → 30 → 34 → 37 → 40 → 41 → 47 → 17 → 27 → 29 → 38 → 39 → 5 →
+  19 → 24 → 26 → 33 → 21 → 15 → 32
+
+
+-------------------------------------------------
+Normalization on training, without Normalization on testing: 
+
+1 - Trained o Berlin52, Test on Berlin52 tour length = 23431.59
+
+
