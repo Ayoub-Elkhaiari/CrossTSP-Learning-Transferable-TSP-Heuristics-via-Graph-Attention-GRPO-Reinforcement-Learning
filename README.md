@@ -103,7 +103,7 @@ TSP Instance (coords)
 
 ## Visualizations
 
-After running evaluation, CrossTSP produces the following plots. Full benchmark comparison results are available in `results/crosstsp_results.csv` and `results/ga_results.csv`.
+After running evaluation, CrossTSP produces the following plots. Full benchmark comparison results are available in `results` and `My_method`.
 
 ### 1. Predicted Tour
 After running `--test`, a tour visualization is shown automatically:
@@ -123,7 +123,7 @@ Run the full benchmark evaluation to get a gap comparison chart:
 ```bash
 python evaluate_datasets.py
 ```
-> Produces a bar chart comparing CrossTSP vs GA gap(%) across all TSPLIB instances, grouped by metric type.
+> Produces a CSV with all Datasets.
 
 
 
