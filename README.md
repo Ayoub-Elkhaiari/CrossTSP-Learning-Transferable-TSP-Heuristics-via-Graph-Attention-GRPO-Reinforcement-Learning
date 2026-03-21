@@ -1,12 +1,11 @@
 # CrossTSP 🧭
 ### Learning Transferable TSP Heuristics via Graph Attention Networks and Reinforcement Learning
-
-[![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![PyG](https://img.shields.io/badge/PyTorch_Geometric-latest-3C2179?style=flat-square&logo=pyg&logoColor=white)](https://pyg.org/)
-[![License](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Research-F59E0B?style=flat-square)]()
-[![TSPLIB](https://img.shields.io/badge/Benchmarks-TSPLIB-6366F1?style=flat-square)]()
+![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![PyG](https://img.shields.io/badge/PyTorch_Geometric-latest-3C2179?style=flat-square&logo=pyg&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Research-F59E0B?style=flat-square)
+![TSPLIB](https://img.shields.io/badge/Benchmarks-TSPLIB-6366F1?style=flat-square)
 
 ---
 
@@ -93,11 +92,11 @@ TSP Instance (coords)
 
 ### Key findings
 
-**Generalization works — within metric families.** The model, never having seen eil51 or st70 during training, achieves 12.5% and -1.98% gaps respectively. It consistently outperforms GA by 13–28 percentage points on Euclidean instances.
+**Generalization works — within metric families.** The model, never having seen eil51 or st70 during training, achieves 12.5% and -1.98% gaps respectively. It consistently outperforms GA by 13–28 percentage points on **Euclidean instances**.
 
 **Metric mismatch breaks generalization — predictably.** att48 uses pseudo-Euclidean distances (`d = ceil(sqrt((dx²+dy²)/10))`), a warped metric the model was never exposed to. The failure is total and expected — and tells us exactly what the model learned: Euclidean geometry, not abstract TSP structure.
 
-**This is a research finding, not a failure.** The boundary of generalization is now known and interpretable.
+**This is a research finding, not a failure.** The boundary of generalization is now known and interpretable, it will be solved and added more features for a publishable paper in the future.
 
 ---
 
@@ -116,6 +115,14 @@ After running `--test`, a tour visualization is shown automatically:
 python main.py --data data/berlin52.tsp --test --device cpu
 ```
 > The tour plot appears automatically after evaluation. Red numbers = city indices. The path shows the order of visits.
+for CrossTSP:
+ <img width="1730" height="917" alt="image" src="https://github.com/user-attachments/assets/fcd78a39-6b82-4a72-b4a0-4de940982322" />
+
+for GA : 
+
+<img width="1177" height="838" alt="image" src="https://github.com/user-attachments/assets/92e79152-96d0-4df1-b902-2dffde2894f0" />
+
+
 
 ### 2. Cross-Instance Evaluation Bar Chart
 Run the full benchmark evaluation to get a gap comparison chart:
@@ -124,7 +131,12 @@ Run the full benchmark evaluation to get a gap comparison chart:
 python evaluate_datasets.py
 ```
 > Produces a CSV with all Datasets.
+for CrossTSP:
+<img width="966" height="226" alt="image" src="https://github.com/user-attachments/assets/956112ba-0b70-45a6-95f5-acf798b78e51" />
 
+for GA: 
+
+<img width="915" height="225" alt="image" src="https://github.com/user-attachments/assets/ca252c51-d1ff-4790-860e-f6d982d3c3bd" />
 
 
 ---
@@ -132,8 +144,8 @@ python evaluate_datasets.py
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/CrossTSP.git
-cd CrossTSP
+git clone https://github.com/Ayoub-Elkhaiari/CrossTSP-Learning-Transferable-TSP-Heuristics-via-Graph-Attention-GRPO-Reinforcement-Learning.git
+cd CrossTSP-Learning-Transferable-TSP-Heuristics-via-Graph-Attention-GRPO-Reinforcement-Learning
 pip install torch torch-geometric gym numpy matplotlib tqdm
 ```
 
@@ -143,7 +155,7 @@ pip install torch torch-geometric gym numpy matplotlib tqdm
 
 ### Train
 ```bash
-python main.py --data data/berlin52.tsp --episodes 2000 --lr 1e-4 --device cpu
+python main.py --data data/berlin52.tsp --episodes 300 --lr 1e-4 --device cpu
 ```
 Saves model to `gat_tsp_model.pt` and plots the training reward curve.
 
@@ -164,7 +176,7 @@ Runs zero-shot evaluation across all datasets and outputs the results CSV.
 | Argument | Default | Description |
 |---|---|---|
 | `--data` | `data/berlin52.tsp` | Path to `.tsp` file |
-| `--episodes` | `500` | Training episodes (use 2000 for best results) |
+| `--episodes` | `300` | Training episodes (use 2000 for best results) |
 | `--lr` | `1e-4` | Learning rate |
 | `--device` | `cpu` | `cpu` or `cuda` |
 | `--test` | `False` | Flag to run evaluation instead of training |
@@ -231,10 +243,10 @@ If you use this code in your research, please cite:
 ```bibtex
 @misc{elkhaiari2025crosstsp,
   author = {EL KHAIARI, Ayoub},
-  title = {CrossTSP: Learning Transferable TSP Heuristics via Graph Attention Networks and Reinforcement Learning},
+  title = {CrossTSP: Learning Transferable TSP Heuristics via Graph Attention & GRPO Reinforcement Learning},
   year = {2025},
   publisher = {GitHub},
-  url = {https://github.com/yourusername/CrossTSP}
+  url = {https://github.com/Ayoub-Elkhaiari/CrossTSP-Learning-Transferable-TSP-Heuristics-via-Graph-Attention-GRPO-Reinforcement-Learning}
 }
 ```
 
