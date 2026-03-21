@@ -1,11 +1,12 @@
 # CrossTSP 🧭
 ### Learning Transferable TSP Heuristics via Graph Attention Networks and Reinforcement Learning
-![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![PyG](https://img.shields.io/badge/PyTorch_Geometric-latest-3C2179?style=flat-square&logo=pyg&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-22C55E?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Research-F59E0B?style=flat-square)
-![TSPLIB](https://img.shields.io/badge/Benchmarks-TSPLIB-6366F1?style=flat-square)
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![PyG](https://img.shields.io/badge/PyTorch_Geometric-latest-3C2179?logo=pyg&logoColor=white)](https://pyg.org/)
+[![TSPLIB](https://img.shields.io/badge/Benchmarks-TSPLIB-6366F1?logo=databricks&logoColor=white)](https://github.com/yourusername/CrossTSP)
+[![Status](https://img.shields.io/badge/Status-Research-F59E0B?logo=academia&logoColor=white)](https://github.com/yourusername/CrossTSP)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
