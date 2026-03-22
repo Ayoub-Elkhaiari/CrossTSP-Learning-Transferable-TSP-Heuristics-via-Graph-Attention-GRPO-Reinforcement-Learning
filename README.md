@@ -178,7 +178,7 @@ Runs zero-shot evaluation across all datasets and outputs the results CSV.
 | Argument | Default | Description |
 |---|---|---|
 | `--data` | `data/berlin52.tsp` | Path to `.tsp` file |
-| `--episodes` | `300` | Training episodes (use 2000 for best results) |
+| `--episodes` | `500` by default but I have used 300 | you can use as much as you want  |
 | `--lr` | `1e-4` | Learning rate |
 | `--device` | `cpu` | `cpu` or `cuda` |
 | `--test` | `False` | Flag to run evaluation instead of training |
