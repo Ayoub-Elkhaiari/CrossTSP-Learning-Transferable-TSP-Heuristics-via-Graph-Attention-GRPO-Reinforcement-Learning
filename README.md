@@ -116,6 +116,9 @@ After running `--test`, a tour visualization is shown automatically:
 python main.py --data data/berlin52.tsp --test --device cpu
 ```
 > The tour plot appears automatically after evaluation. Red numbers = city indices. The path shows the order of visits.
+```
+**Note**: these plots was conducted recently with differents seed so it is different than the CSVs metrics.
+```
 for CrossTSP:
  <img width="1730" height="917" alt="image" src="https://github.com/user-attachments/assets/fcd78a39-6b82-4a72-b4a0-4de940982322" />
 
