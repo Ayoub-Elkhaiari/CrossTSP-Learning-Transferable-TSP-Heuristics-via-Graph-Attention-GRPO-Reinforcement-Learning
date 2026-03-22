@@ -4,8 +4,8 @@
 [![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![PyG](https://img.shields.io/badge/PyTorch_Geometric-latest-3C2179?logo=pyg&logoColor=white)](https://pyg.org/)
-[![TSPLIB](https://img.shields.io/badge/Benchmarks-TSPLIB-6366F1?logo=databricks&logoColor=white)](https://github.com/yourusername/CrossTSP)
-[![Status](https://img.shields.io/badge/Status-Research-F59E0B?logo=academia&logoColor=white)](https://github.com/yourusername/CrossTSP)
+[![TSPLIB](https://img.shields.io/badge/Benchmarks-TSPLIB-6366F1?logo=databricks&logoColor=white)](https://github.com/Ayoub-Elkhaiari/CrossTSP-Learning-Transferable-TSP-Heuristics-via-Graph-Attention-GRPO-Reinforcement-Learning)
+[![Status](https://img.shields.io/badge/Status-Research-F59E0B?logo=academia&logoColor=white)](https://github.com/Ayoub-Elkhaiari/CrossTSP-Learning-Transferable-TSP-Heuristics-via-Graph-Attention-GRPO-Reinforcement-Learning)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 ---
@@ -116,9 +116,7 @@ After running `--test`, a tour visualization is shown automatically:
 python main.py --data data/berlin52.tsp --test --device cpu
 ```
 > The tour plot appears automatically after evaluation. Red numbers = city indices. The path shows the order of visits.
-```
 **Note**: these plots was conducted recently with differents seed so it is different than the CSVs metrics.
-```
 for CrossTSP:
  <img width="1730" height="917" alt="image" src="https://github.com/user-attachments/assets/fcd78a39-6b82-4a72-b4a0-4de940982322" />
 
