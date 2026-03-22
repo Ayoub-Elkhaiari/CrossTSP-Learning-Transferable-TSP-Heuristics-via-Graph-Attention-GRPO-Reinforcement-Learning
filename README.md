@@ -255,7 +255,7 @@ If you use this code in your research, please cite:
 
 ## Author
 
-**Ayoub EL KHAIARI** — Independent AI Researcher
+**Ayoub EL KHAIARI**:  Independent AI Researcher
 
 ---
 
